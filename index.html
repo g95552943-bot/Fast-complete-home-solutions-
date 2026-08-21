@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAST Complete Home Solutions</title>
+<meta name="description" content="FAST Complete Home Solutions — construction, electrical, plumbing, tile & marble, solar, painting, renovation and maintenance.">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,Helvetica,sans-serif;color:#17324d;background:#f6f8fb;line-height:1.6}
+header{background:#06345f;color:white;position:sticky;top:0;z-index:20;box-shadow:0 2px 10px #0002}
+.nav{max-width:1200px;margin:auto;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:900;font-size:27px;color:#ffd21c;letter-spacing:1px}
+.logo span{display:block;color:white;font-size:11px;letter-spacing:2px}
+nav a{color:white;text-decoration:none;margin:0 10px;font-weight:700;font-size:14px}
+nav a:hover{color:#ffd21c}
+.btn{display:inline-block;background:#ffd21c;color:#082f55;text-decoration:none;padding:12px 20px;border-radius:28px;font-weight:800;border:0;cursor:pointer}
+.hero{background:linear-gradient(120deg,#06345f,#0c5a8e);color:white;padding:80px 20px}
+.hero-inner{max-width:1200px;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.hero h1{font-size:54px;line-height:1.05;margin-bottom:15px}
+.hero h1 b{color:#ffd21c}
+.hero p{font-size:20px;max-width:650px;margin-bottom:25px}
+.hero-card{background:#ffffff12;border:1px solid #ffffff33;border-radius:25px;padding:35px;text-align:center}
+.house{font-size:110px}
+.section{max-width:1200px;margin:auto;padding:70px 20px}
+.title{text-align:center;margin-bottom:40px}
+.title h2{font-size:36px;color:#06345f}
+.title p{color:#64748b}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:white;padding:25px;border-radius:18px;box-shadow:0 8px 25px #17324d12;text-align:center;border-top:4px solid #ffd21c}
+.icon{font-size:42px;margin-bottom:10px}
+.card h3{margin-bottom:7px;color:#06345f}
+.about{background:#eaf2f8}
+.about-inner{max-width:1200px;margin:auto;padding:70px 20px;display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about h2{font-size:36px;color:#06345f;margin-bottom:15px}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:15px}
+.stat{background:white;padding:25px;border-radius:15px;text-align:center}
+.stat strong{font-size:32px;color:#0b67a1;display:block}
+.contact{background:#06345f;color:white}
+.contact-inner{max-width:900px;margin:auto;text-align:center;padding:65px 20px}
+.contact h2{font-size:38px;margin-bottom:12px}
+footer{background:#042442;color:#cbd5e1;text-align:center;padding:25px}
+.whatsapp{position:fixed;right:20px;bottom:20px;background:#25d366;color:white;text-decoration:none;padding:15px 20px;border-radius:30px;font-weight:800;box-shadow:0 5px 20px #0004;z-index:30}
+@media(max-width:900px){
+.hero-inner,.about-inner{grid-template-columns:1fr}
+.grid{grid-template-columns:repeat(2,1fr)}
+nav{display:none}
+.hero h1{font-size:42px}
+}
+@media(max-width:560px){
+.grid,.stats{grid-template-columns:1fr}
+.hero{padding:55px 18px}
+.hero h1{font-size:36px}
+.section{padding:50px 18px}
+}
+
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.gallery img{width:100%;height:240px;object-fit:cover;border-radius:18px;box-shadow:0 8px 25px #17324d18}
+@media(max-width:900px){.gallery{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.gallery{grid-template-columns:1fr}}
+
+.service-options{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:25px}
+.service-options a{background:white;color:#06345f;text-decoration:none;padding:14px;border-radius:12px;font-weight:700;box-shadow:0 4px 14px #0001}
+.service-options a:hover{background:#ffd21c}
+.form-box{max-width:760px;margin:30px auto 0;background:white;padding:28px;border-radius:20px;color:#17324d;text-align:left}
+.form-box label{display:block;font-weight:700;margin:12px 0 6px}
+.form-box input,.form-box textarea,.form-box select{width:100%;padding:12px;border:1px solid #ccd6e0;border-radius:10px;font:inherit}
+.form-box textarea{min-height:110px;resize:vertical}
+.form-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+@media(max-width:900px){.service-options{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.service-options{grid-template-columns:1fr}}
+
+.service-photo{width:100%;height:170px;object-fit:cover;border-radius:14px;margin-bottom:14px}
+.service-card{padding:18px}
+</style>
+</head>
+<body>
+
+<header>
+<div class="nav">
+  <div class="logo">FAST <span>COMPLETE HOME SOLUTIONS</span></div>
+  <nav>
+    <a href="#home">Home</a><a href="#services">Services</a><a href="#about">About</a><a href="#projects">Our Work</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="btn" href="#contact">Get a Quote</a>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-inner">
+  <div>
+    <p style="color:#ffd21c;font-weight:800;letter-spacing:2px">ONE CALL, WE HANDLE IT ALL.</p>
+    <h1>FAST <b>Complete</b><br>Home Solutions</h1>
+    <p>Professional construction and complete home services under one roof — from building work to electrical, plumbing, solar, renovation and maintenance.</p>
+    <a class="btn" href="#contact">Request a Free Quote</a>
+  </div>
+  <div class="hero-card">
+    <div class="house">🏠</div>
+    <h2>Your Dream Home, Our Responsibility</h2>
+    <p>Quality work • On time • Affordable rates</p>
+  </div>
+</div>
+</section>
+
+<section class="section" id="services">
+<div class="title"><h2>Our Services</h2><p>All home & building services under one roof</p></div>
+<div class="grid">
+  <div class="card"><div class="icon">🏗️</div><h3>Construction</h3><p>Grey structure, plaster and complete building work.</p></div>
+  <div class="card service-card"><img class="service-photo" src="https://img.houseui.com/media/blog-thumbnail/A_Person_is_Doing_Electricity_Work.webp" alt="Electrical house wiring work"><div class="icon">⚡</div><h3>Electrical</h3><p>House wiring, DB installation, lighting and electrical work.</p></div>
+  <div class="card"><div class="icon">🚰</div><h3>Plumbing</h3><p>Water supply, drainage, bathrooms and plumbing repair.</p></div>
+  <div class="card"><div class="icon">🪨</div><h3>Tile & Marble</h3><p>Floor, wall, kitchen and bathroom tile & marble work.</p></div>
+  <div class="card service-card"><img class="service-photo" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Technicians_working_on_a_solar_panel_installation_(9235).jpg" alt="Solar panel installation"><div class="icon">☀️</div><h3>Solar Solutions</h3><p>Solar installation, wiring and maintenance solutions.</p></div>
+  <div class="card"><div class="icon">🎨</div><h3>Paint & Polish</h3><p>Interior and exterior painting and finishing work.</p></div>
+  <div class="card"><div class="icon">🏠</div><h3>Renovation</h3><p>Home renovation, remodeling and improvement work.</p></div>
+  <div class="card"><div class="icon">🛠️</div><h3>Maintenance</h3><p>General home and building repair and maintenance.</p></div>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="about-inner">
+  <div>
+    <h2>Why FAST Complete Home Solutions?</h2>
+    <p>We make home and building work simple by providing multiple professional services through one trusted team. Our focus is quality workmanship, clear communication, timely completion and customer satisfaction.</p>
+    <br><a class="btn" href="#contact">Talk to Us</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>100+</strong>Projects Target</div>
+    <div class="stat"><strong>24/7</strong>Customer Support</div>
+    <div class="stat"><strong>8+</strong>Service Categories</div>
+    <div class="stat"><strong>1</strong>Call for Everything</div>
+  </div>
+</div>
+</section>
+
+
+<section class="section" id="projects">
+<div class="title"><h2>Our Work</h2><p>Some examples of our tile, marble and flooring work</p></div>
+<div class="gallery">
+  <img src="images/project-1.jpg" alt="FAST Complete Home Solutions project">
+  <img src="images/project-2.jpg" alt="Marble staircase work">
+  <img src="images/project-3.jpg" alt="Tile flooring work">
+  <img src="images/project-4.jpg" alt="Decorative tile flooring">
+  <img src="images/project-5.jpg" alt="Tile and marble flooring">
+  <img src="images/project-6.jpg" alt="Floor finishing work">
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="contact-inner">
+  <h2>Need Home or Building Work?</h2>
+  <p>Call or WhatsApp us for a quotation and site visit.</p>
+<p>Choose the service you need:</p>
+<div class="service-options">
+  <a href="#contact">🏗️ Construction</a>
+  <a href="#contact">⚡ Electrical</a>
+  <a href="#contact">🚰 Plumbing</a>
+  <a href="#contact">🪨 Tile & Marble</a>
+  <a href="#contact">☀️ Solar</a>
+  <a href="#contact">🎨 Paint & Polish</a>
+  <a href="#contact">🏠 Renovation</a>
+  <a href="#complaint">⚠️ Complaint / Feedback</a>
+</div>
+
+  <br>
+  <a class="btn" href="tel:+923315958313">Call Now</a>
+  <a class="btn" style="margin-left:8px" href="https://wa.me/92XXXXXXXXXX">WhatsApp</a>
+  <p style="margin-top:22px;color:#bcd0e2">Phone/WhatsApp: +92 XXX XXXXXXX • Service Area: Pakistan</p>
+</div>
+</section>
+
+
+<section class="section" id="complaint">
+<div class="title"><h2>Complaint / Feedback</h2><p>Tell us about your issue and our team will contact you.</p></div>
+<div class="form-box">
+  <label for="cname">Name</label>
+  <input id="cname" placeholder="Your name">
+  <label for="cphone">Phone</label>
+  <input id="cphone" placeholder="Your phone number">
+  <label for="ctype">Service</label>
+  <select id="ctype">
+    <option>Construction</option><option>Electrical</option><option>Plumbing</option>
+    <option>Tile & Marble</option><option>Solar</option><option>Paint & Polish</option>
+    <option>Renovation</option><option>Maintenance</option><option>Other</option>
+  </select>
+  <label for="cmsg">Complaint / Message</label>
+  <textarea id="cmsg" placeholder="Write your complaint or feedback"></textarea>
+  <div class="form-actions">
+    <button class="btn" type="button" onclick="sendComplaint()">Send on WhatsApp</button>
+  </div>
+</div>
+</section>
+<script>
+function sendComplaint(){
+  const n=document.getElementById('cname').value.trim();
+  const p=document.getElementById('cphone').value.trim();
+  const s=document.getElementById('ctype').value;
+  const m=document.getElementById('cmsg').value.trim();
+  const text=`FAST Complete Home Solutions - Complaint/Feedback%0AName: ${encodeURIComponent(n)}%0APhone: ${encodeURIComponent(p)}%0AService: ${encodeURIComponent(s)}%0AMessage: ${encodeURIComponent(m)}`;
+  window.open('https://wa.me/923315958313?text='+text,'_blank');
+}
+</script>
+
+<footer>© 2026 FAST Complete Home Solutions. All rights reserved.</footer>
+<a class="whatsapp" href="https://wa.me/92XXXXXXXXXX">💬 WhatsApp</a>
+</body>
+</html>
